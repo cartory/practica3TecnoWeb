@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> Login Design Using Foundation Design </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/materialDesign.ico">
+    <link rel="icon" href="../assets/foundation.ico">
     <link rel="stylesheet" type="text/css" href="foundation.css">
     <link rel="stylesheet" type="text/css" href="../autocomplete.css">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
@@ -25,39 +25,26 @@
                         <form>
                             <div class="grid-x grid-padding-x">
                                 <div class="large-12 medium-12 cell">
-                                    <input type="text" name="nombre" placeholder="Ingrese Nombre">
+                                    <input type="text" name="nombre" placeholder="Ingrese Nombre" required>
                                 </div>
                                 <div class="large-12 medium-12 cell">
-                                    <input type="email" name="email" placeholder="Ingrese Email">
+                                    <input type="email" name="email" placeholder="Ingrese Email" required>
                                 </div>
                                 <div class="large-6 medium-12 cell">
-                                    <input type="tel" name="celular" placeholder="Ingrese Celular">
+                                    <input type="number" name="celular" placeholder="Ingrese Celular" required>
                                 </div>
                                 <div class="large-6 medium-12 cell">
-                                    <input type="date" name="fechaNacimiento" placeholder="Fecha Nacimiento">
+                                    <input type="date" name="fechaNacimiento" placeholder="Fecha Nacimiento" required>
                                 </div>
                                 <div class="autocomplete large-12 medium-12 cell">
-                                    <input id="myInput" type="text" name="pais" placeholder="Country">
+                                    <input id="myInput" type="text" name="pais" placeholder="Country" required>
                                 </div>
-                                <!-- LOGIN -->
                                 <div class="large-12 medium-12 cell">
-                                    <a class="button primary login-btn" href="#">Login</a>
-                                </div>
-                                <div class="grid-x grid-padding-x cell columns forget-section">
-                                    <div class="large-6 medium-6 small-12 cell text-center">
-                                        <input id="checkbox12" type="checkbox"><label for="checkbox12">RemeberMe</label>
-                                    </div>
-                                    <div class="large-6 medium-6 text-center small-12 text-right">
-                                        <a href="#">Forget your password?</a>
-                                    </div>
+                                    <input class="button primery login-btn" type="submit" value="Submit">
+                                    <!-- <a type="submit" class="button primary login-btn" href="#">Submit</a> -->
                                 </div>
                             </div>
                         </form>
-                    </div>
-                </div>
-                <div class="grid-x grid-padding-x sign-section">
-                    <div class="large-12 small-12 text-center last-text">
-                        <span>Don't have an account ? <a href="#" class="large-12">Signup</a></span>
                     </div>
                 </div>
             </div>
