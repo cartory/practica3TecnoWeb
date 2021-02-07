@@ -7,15 +7,15 @@
     <title> Login Design Using Foundation Design </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="foundation.css">
+    <link rel="stylesheet" type="text/css" href="../autocomplete.css">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css">
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
 </head>
 
 <body id="background">
     <div class="grid-container">
         <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-6 small-12 cell callout form-section">
+            <div class="large-5 medium-6 small-12 cell callout form-section">
                 <div class="grid-x grid-padding-x">
                     <div class="large-12 medium-12 small-12 text-center header">
                         <h1> Foundation Form </h1>
@@ -24,24 +24,27 @@
                         <form>
                             <div class="grid-x grid-padding-x">
                                 <div class="large-12 medium-12 cell">
-                                    <input type="text" placeholder="Ingrese Nombre">
+                                    <input type="text" name="nombre" placeholder="Ingrese Nombre">
                                 </div>
                                 <div class="large-12 medium-12 cell">
-                                    <input type="email" placeholder="Ingrese Email">
+                                    <input type="email" name="email" placeholder="Ingrese Email">
                                 </div>
                                 <div class="large-6 medium-12 cell">
-                                    <input type="tel" placeholder="Ingrese Celular">
+                                    <input type="tel" name="celular" placeholder="Ingrese Celular">
                                 </div>
                                 <div class="large-6 medium-12 cell">
-                                    <input type="date" placeholder="Fecha Nacimiento">
+                                    <input type="date" name="fechaNacimiento" placeholder="Fecha Nacimiento">
                                 </div>
+                                <div class="autocomplete large-12 medium-12 cell">
+                                    <input id="myInput" type="text" name="pais" placeholder="Country">
+                                </div>
+                                <!-- LOGIN -->
                                 <div class="large-12 medium-12 cell">
                                     <a class="button primary login-btn" href="#">Login</a>
                                 </div>
                                 <div class="grid-x grid-padding-x cell columns forget-section">
                                     <div class="large-6 medium-6 small-12 cell text-center">
-                                        <input id="checkbox12" type="checkbox"><label for="checkbox12">Remeber
-                                            Me</label>
+                                        <input id="checkbox12" type="checkbox"><label for="checkbox12">RemeberMe</label>
                                     </div>
                                     <div class="large-6 medium-6 text-center small-12 text-right">
                                         <a href="#">Forget your password?</a>
@@ -60,9 +63,11 @@
         </div>
     </div>
     <div id="particles-js"></div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="custom.js"></script>
+    <script src="foundation.js"></script>
+    <script src="../autocomplete.js"></script>
 </body>
 
 </html>
