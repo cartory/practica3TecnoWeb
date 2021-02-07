@@ -19,9 +19,9 @@
 <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
 
-<body  style="background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1000306331958684055/EEBA1F028C5E4C09A4094A4989533C1ADF1FFFF9/'); 
+<body  style="padding:2% ; background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1000306331958684055/EEBA1F028C5E4C09A4094A4989533C1ADF1FFFF9/'); 
 object-fit: cover;">
-    <div class="container white ">
+    <div class="container white " style="padding:2% ; border-radius: 20px ;" >
         <div class="row">
             <form class="col s12">
                 <div class="row">
@@ -86,11 +86,22 @@ object-fit: cover;">
                     
                     </div>
                 </div>
+                <div class="row ">
+                    <div class="input-field col s6">
 
+                    <div class="autocomplete large-12 medium-12 cell">
+                        <label for="date">Fecha de nacimiento</label>
+                        <input id="myInput" type="text" name="pais" placeholder="Country" required>
+                    </div>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
             </form>
         </div>
     </div>
-
+    <script src="../autocomplete.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script> document.addEventListener('DOMContentLoaded', function () {
             const options = {
