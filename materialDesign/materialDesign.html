@@ -20,19 +20,20 @@
 
 
 <body  style="padding:2% ; background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1000306331958684055/EEBA1F028C5E4C09A4094A4989533C1ADF1FFFF9/'); 
-object-fit: cover;">
+object-fit: cover;
+background-size: cover;">
     <div class="container white " style="padding:2% ; border-radius: 20px ;" >
         <div class="row">
             <form class="col s12">
                 <div class="row">
                     <div class="input-field col s6">
                         <i class="material-icons prefix">account_circle</i>
-                        <input id="last_name" type="text" class="validate">
+                        <input id="last_name" type="text" class="validate" required>
                         <label for="last_name">nombre</label>
                     </div>
                     <div class="input-field col s6">
                         <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate">
+                        <input id="email" type="email" class="validate" required>
                         <label for="email">correo electrónico</label>
                     </div>
 
@@ -40,31 +41,23 @@ object-fit: cover;">
                 <div class="row">
                     <div class="input-field col s6">
                         <i class="material-icons prefix">phone</i>
-                        <input id="icon_telephone" type="number" class="validate">
+                        <input id="icon_telephone" type="number" class="validate" required>
                         <label for="icon_telephone">Celular</label>
                     </div>
                     <div class="input-field col s6">
 
-                        <input id="date" type="date" class="validate">
+                        <input id="date" type="date" class="validate" required>
                         <label for="date">fecha de nacimiento</label>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ">
                     <div class="input-field col s12">
-                        <select>
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">Peru</option>
-                            <option value="2">Bolivia</option>
-                            <option value="3">Brasil</option>
-                            <option value="4">Chile</option>
-                            <option value="5">Argentina</option>
-                            <option value="6">Venezuela</option>
-                            <option value="7">Costa Rica</option>
-                        </select>
-                        <label>Materialize Select</label>
+
+                    <div class="autocomplete large-12 medium-12 cell">
+                        <label for="date">Buscar Pais</label>
+                        <input id="myInput" type="text" name="pais" placeholder="Country" required>
                     </div>
-
-
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col s6">
@@ -77,24 +70,16 @@ object-fit: cover;">
                 <div class="row">
                     <div class="input-field col s6">
 
-                        <input id="date" type="file" class="validate">
+                        <input id="date" type="file" class="validate" required>
                     
                     </div>
                     <div class="input-field col s6">
 
-                        <input id="date" type="file" class="validate">
+                        <input id="date" type="file" class="validate" required>
                     
                     </div>
                 </div>
-                <div class="row ">
-                    <div class="input-field col s6">
-
-                    <div class="autocomplete large-12 medium-12 cell">
-                        <label for="date">Fecha de nacimiento</label>
-                        <input id="myInput" type="text" name="pais" placeholder="Country" required>
-                    </div>
-                    </div>
-                </div>
+                
                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>
                   </button>
