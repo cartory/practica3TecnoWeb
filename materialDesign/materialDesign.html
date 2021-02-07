@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Design </title>
+    <!-- Importo el framework de CSS -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+
+<body  style="background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1000306331958684055/EEBA1F028C5E4C09A4094A4989533C1ADF1FFFF9/'); 
+object-fit: cover;">
+    <div class="container white ">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">correo electrónico</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="number" class="validate">
+                        <label for="icon_telephone">Celular</label>
+                    </div>
+                    <div class="input-field col s6">
+
+                        <input id="date" type="date" class="validate">
+                        <label for="date">fecha de nacimiento</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Peru</option>
+                            <option value="2">Bolivia</option>
+                            <option value="3">Brasil</option>
+                            <option value="4">Chile</option>
+                            <option value="5">Argentina</option>
+                            <option value="6">Venezuela</option>
+                            <option value="7">Costa Rica</option>
+                        </select>
+                        <label>Materialize Select</label>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col s6">
+                        <label for="">Fotos</label>
+                    </div>
+                    <div class="col s6">
+                        <label for="">Videos</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+
+                        <input id="date" type="file" class="validate">
+                    
+                    </div>
+                    <div class="input-field col s6">
+
+                        <input id="date" type="file" class="validate">
+                    
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script> document.addEventListener('DOMContentLoaded', function () {
+            const options = {
+                dropdownOptions: {
+                    onCloseStart: () => {
+                        console.log("Close Start from dropdownOptions");
+                    },
+                }
+            };
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+        });
+    </script>
+</body>
+
+<script>	mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));</script>
+<script>	const MDCTextField = mdc.textField.MDCTextField;
+    const MDCTextFieldFoundation = mdc.textField.MDCTextFieldFoundation;
+    const foos = [].map.call(document.querySelectorAll('.mdc-text-field'), function (el) {
+        return new MDCTextField(el);
+    });
+        // const foo = new MDCTextField(document.querySelector('.mdc-text-field'));</script>
+<script>
+    const MDCMenu = mdc.menu.MDCMenu;
+    const foos = [].map.call(document.querySelectorAll('.mdc-menu-field'), function (el) {
+        return new MDCMenu(el);
+    });
+</script>
+<style>
+    .body {
+        position: relative;
+        font-family:
+            'Roboto', 'Helvetica', 'Arial', sans-serif;
+    }
+
+    .wrap {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        width: 350px;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    /* select starting stylings ------------------------------*/
+    .select {
+        font-family:
+            'Roboto', 'Helvetica', 'Arial', sans-serif;
+        position: relative;
+        width: 350px;
+    }
+
+    .select-text {
+        position: relative;
+        font-family: inherit;
+        background-color: transparent;
+        width: 350px;
+        padding: 10px 10px 10px 10px;
+        font-size: 18px;
+        border-radius: 4px;
+        border: 2px solid rgba(0, 0, 0, 0.12);
+    }
+
+    /* Remove focus */
+    .select-text:focus {
+        outline: none;
+        border: 2px solid orange;
+    }
+
+    /* Use custom arrow */
+    .select .select-text {
+        appearance: none;
+        -webkit-appearance: none;
+        color: gray;
+    }
+
+    .select:after {
+        position: absolute;
+        top: 18px;
+        right: 10px;
+        /* Styling the down arrow */
+        width: 0;
+        height: 0;
+        padding: 0;
+        content: '';
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid rgba(0, 0, 0, 0.12);
+
+        pointer-events: none;
+    }
+
+    /* LABEL ======================================= */
+    .select-label {
+        color: rgba(0, 0, 0, 0.26);
+        background: white;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        padding: 0 5px;
+        left: 10px;
+        top: 12px;
+        transition: 0.2s ease all;
+    }
+
+
+    /* active state */
+    .select-text:focus~.select-label,
+    .select-text:valid~.select-label {
+        color: orange;
+        top: -8px;
+        transition: 0.2s ease all;
+        font-size: 14px;
+    }
+
+    .select-text:valid:not(focus)~.select-label {
+        color: rgba(0, 0, 0, 0.26);
+        background: red;
+    }
+
+    .select-text:valid:focus~.select-label {
+        color: orange;
+    }
+</style>
+
+</html>
